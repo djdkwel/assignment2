@@ -1,49 +1,58 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Event Details
+      Update User
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-searchbar></ion-searchbar>
-  <h1>Event Details</h1>
-
-  <ion-content
-  [scrollEvents]="true"
-  (ionScrollStart)="logScrollStart()"
-  (ionScroll)="logScrolling($event)"
-  (ionScrollEnd)="logScrollEnd()">
-
-  <ion-list>
-    <ion-item>
-      <ion-icon name="calendar-outline"></ion-icon>
-      <ion-label>Jane Doe</ion-label><ion-button>Make Public</ion-button>
-    </ion-item>
-    <ion-item>
-      <ion-icon name="calendar-outline"></ion-icon>
-      <ion-label>Lisa Way</ion-label><ion-button>Make Public</ion-button>
-    </ion-item>
-    <ion-item>
-      <ion-icon name="calendar-outline"></ion-icon>
-      <ion-label>Clark Kent</ion-label><ion-button>Make Public</ion-button>
-    </ion-item>
-    <ion-item>
-      <ion-icon name="calendar-outline"></ion-icon>
-      <ion-label>Dana Lee</ion-label><ion-button>Make Public</ion-button>
-    </ion-item>
-    <ion-item>
-      <ion-icon name="calendar-outline"></ion-icon>
-      <ion-label>Jack Black</ion-label><ion-button>Make Public</ion-button>
-    </ion-item>
-  </ion-list>
+  <h1>User</h1>
   
+ 
 
-    
+  <ion-content fullscreen>
+    <img src="../../assets/brooks-leibee-27QcqVqgVg4-unsplash.jpg" alt="User Profile Pic" style="width: 25%; height: 25%;">
+    <form onsubmit="processForm(event)">
+      <ion-list lines="full" class="ion-no-margin ion-no-padding">
+        <ion-item>
+          <ion-label position="stacked">First Name <ion-text ></ion-text></ion-label>
+          <ion-input required type="text" oninput="handleFirstNameValue(event)"></ion-input>
+        </ion-item>
 
-    
-</ion-content>
+        <ion-item>
+          <ion-label position="stacked">Last Name <ion-text ></ion-text></ion-label>
+          <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Email <ion-text ></ion-text></ion-label>
+          <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Phone Number</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Username</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Notes</ion-label>
+          <ion-textarea></ion-textarea>
+        </ion-item>
+      </ion-list>
 
 
+
+      <div class="ion-padding">
+        <ion-button expand="block" type="submit" class="ion-no-margin">Update Profile</ion-button>
+      </div>
+    </form>
+  </ion-content>
+  <ion-alert-controller></ion-alert-controller>
 </ion-content>

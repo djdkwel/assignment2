@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Event Details
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-searchbar></ion-searchbar>
+  <h1>Event Details</h1>
+
+  <ion-content
+  [scrollEvents]="true"
+  (ionScrollStart)="logScrollStart()"
+  (ionScroll)="logScrolling($event)"
+  (ionScrollEnd)="logScrollEnd()">
+
+  <ion-list>
+    <ion-item>
+      <ion-icon name="calendar-outline"></ion-icon>
+      <ion-label>Summer Bash</ion-label><ion-button>Make Public</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="calendar-outline"></ion-icon>
+      <ion-label>Covid Seminar</ion-label><ion-button>Make Public</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="calendar-outline"></ion-icon>
+      <ion-label>Beach Party</ion-label><ion-button>Make Public</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="calendar-outline"></ion-icon>
+      <ion-label>Picnic </ion-label><ion-button>Make Public</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="calendar-outline"></ion-icon>
+      <ion-label>Concert</ion-label><ion-button>Make Public</ion-button>
+    </ion-item>
+  </ion-list>
+  
+
+    
+
+    
+</ion-content>
+
+
+</ion-content>
