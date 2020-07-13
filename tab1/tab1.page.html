@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Promote User
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-searchbar></ion-searchbar>
+  <h1>Users</h1>
+
+  <ion-content
+  [scrollEvents]="true"
+  (ionScrollStart)="logScrollStart()"
+  (ionScroll)="logScrolling($event)"
+  (ionScrollEnd)="logScrollEnd()">
+
+  <ion-list>
+    <ion-item>
+      <ion-icon name="person-outline"></ion-icon>
+      <ion-label>Jane Doe</ion-label><ion-button>Promote</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="person-outline"></ion-icon>
+      <ion-label>Lisa Way</ion-label><ion-button>Promote</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="person-outline"></ion-icon>
+      <ion-label>Clark Kent</ion-label><ion-button>Promote</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="person-outline"></ion-icon>
+      <ion-label>Dana Lee</ion-label><ion-button>Promote</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="person-outline"></ion-icon>
+      <ion-label>Jack Black</ion-label><ion-button>Promote</ion-button>
+    </ion-item>
+  </ion-list>
+  
+
+    
+
+    
+</ion-content>
+
+
+</ion-content>
